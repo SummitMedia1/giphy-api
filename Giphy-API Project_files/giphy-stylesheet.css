@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Baloo+Thambi|Comfortaa');
+
+
+*{
+box-sizing: border-box;
+}
+
+body {
+
+background-color: steelblue;
+margin: 0px;
+
+}
+
+.container-main {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0;
+	min-width: 100%;
+	min-height: 100%;
+
+}
+	.col-1 {width: 8.33%; display: inline-block; padding: 0;}
+	.col-2 {width: 16.66%; display: inline-block; padding: 0;}
+	.col-3 {width: 25%; display: inline-block; padding: 0;}
+	.col-4 {width: 33.33%; display: inline-block; padding: 0;}
+	.col-5 {width: 41.66%; display: inline-block; padding: 0;}
+	.col-6 {width: 50%; display: inline-block; padding: 0;}
+	.col-7 {width: 58.33%; display: inline-block; padding: 0;}
+	.col-8 {width: 66.66%; display: inline-block; padding: 0;}
+	.col-9 {width: 75%; display: inline-block; padding: 0;}
+	.col-10 {width: 83.33%; display: inline-block; padding: 0;}
+	.col-11 {width: 91.66%; display: inline-block; padding: 0;}
+	.col-12 {width: 100%; display: inline-block; padding: 0;}
+
+	.row {
+	min-width: 100%;
+	min-height: auto;
+	padding: 0;
+	margin: 0 auto;
+}
+
+button {
+
+background-color: #cc0a20;
+color: white;
+border-radius: 20px;
+border:0;
+padding: 10px 20px 10px 20px;
+margin-left: 10px;
+margin-bottom: 20px;
+font-family: Comfortaa;
+font-size: 13px;
+
+}
+
+button:hover {
+
+	background-color: #0b549e;
+	color: white;
+	font-family: "Comfortaa; 
+	font-weight: 900;
+	font-size: 14px;
+
+}
+
+h1 {
+
+	font-family: HelveticaNeue-Light; 
+	font-weight: 100;
+	font-size: 80px;
+}
+
+.myTextBox {
+
+font-family: Comfortaa;
+font-size: 26px !important;
+margin-top: -20px;
+color: white;
+
+}
+
+#searchInput {
+	padding: 20px;
+	width: 400px;
+	height: 35px;
+	font-size: 24px;
+	border-radius: 20px;
+	background-color: rgba(90,255, 10, .5)
+}
+
+#userInput input{
+padding: 20px;
+font-size: 20px;
+}
+
