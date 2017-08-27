@@ -30,7 +30,6 @@ renderButtons();
       var interest = $(this).attr("data-name");
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + interest + "&api_key=dc6zaTOxFJmzC&limit=10";
      
-     console.log(this);
          $.ajax({
           url: queryURL,
           method: "GET"
@@ -55,8 +54,7 @@ renderButtons();
       }
     });
 
-          $(".gif").on("click", function(){
-
+          $(".jiffy").on("click", function(){
 
                   var state = $(this).attr('data-state');
                   
