@@ -53,8 +53,8 @@ renderButtons();
       }
     });
 });
-  $("img").on("click", function() { 
-    if ($(this).attr("src") !== $(this).attr("data-animate")) {
+  $(document).on("click", "img", function() { 
+    if ($(this).attr("src") === $(this).attr("data-still")) {
       $(this).attr("src", $(this).attr("data-animate"));
     } else {
       $(this).attr("src", $(this).attr("data-still"));
