@@ -16,6 +16,9 @@ $(document).ready(function(){
     $("#userInput").on("click", function(event){
     event.preventDefault(); 
     var interest = $("#searchInput").val();
+    if (interest == ""){
+      return false; 
+    }
     console.log(interest);
     interestsArray.push(interest);
     renderButtons();
@@ -37,26 +40,26 @@ $(document).ready(function(){
    .done(function(response) {
       var results = response.data;
       for(var i = 0; i < results.length; i++) {
-        var newDiv = $("<div class='jiffy' data-state='still'>");
+        var newDiv = $("<div class='gifs-appear-here'>");
         var rating = $('<p>').text('Rating: ' + results[i].rating);
         var newImage = $('<img>');
         newImage.attr("src", results[i].images.fixed_height_still.url);
-        newImage.attr({'data-animate' : results[i].images.fixed_height.url});
-        newImage.attr({'data-still' : results[i].images.fixed_height_still.url});
+        newImage.attr("data-still", results[i].images.fixed_height_still.url);
+        newImage.attr("data-animate", results[i].images.fixed_height.url);
         newDiv.append(rating);
         newDiv.append(newImage);
         $('#gifs-appear-here').append(newDiv);
       }
     });
 
-        $(document).on("click", function(){
-        var state = $(this).attr('data-state');
-          if (state == "data-still") {
+        $(document).on("click", "img", function(){
+        var state = $(this).attr("data-state");
+          if (state === "still") {
             $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-state", "data-animate");
+            $(this).attr("data-state", "animate");
           } else {
             $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-state", "data-still");
+            $(this).attr("data-state", "still");
           }
     });
 
