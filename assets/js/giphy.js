@@ -45,7 +45,8 @@ $(document).ready(function(){
         var newImage = $('<img>');
         newImage.attr("src", results[i].images.fixed_height_still.url);
         newImage.attr("data-still", results[i].images.fixed_height_still.url);
-        newImage.attr("data-animate", results[i].images.fixed_height.url);
+        newImage.attr("data-animate", results[i].images.fixed_height.url)
+        .attr('data-state', 'still');
         newDiv.append(rating);
         newDiv.append(newImage);
         $('#gifs-appear-here').append(newDiv);
