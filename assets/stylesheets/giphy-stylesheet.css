@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Baloo+Thambi|Comfortaa');
 
 
-*{
+* {
 box-sizing: border-box;
 }
 
@@ -10,101 +10,79 @@ margin: 0px;
 background-color: steelblue;
 }
 
-.container-main {
-	top: 0;
-	left: 0;
-	padding: 0;
-	min-width: 100%;
-	min-height: 100%;
-}
-	.col-1 {width: 8.33%; display: inline-block; padding: 0;}
-	.col-2 {width: 16.66%; display: inline-block; padding: 0;}
-	.col-3 {width: 25%; display: inline-block; padding: 0;}
-	.col-4 {width: 33.33%; display: inline-block; padding: 0;}
-	.col-5 {width: 41.66%; display: inline-block; padding: 0;}
-	.col-6 {width: 50%; display: inline-block; padding: 0;}
-	.col-7 {width: 58.33%; display: inline-block; padding: 0;}
-	.col-8 {width: 66.66%; display: inline-block; padding: 0;}
-	.col-9 {width: 75%; display: inline-block; padding: 0;}
-	.col-10 {width: 83.33%; display: inline-block; padding: 0;}
-	.col-11 {width: 91.66%; display: inline-block; padding: 0;}
-	.col-12 {width: 100%; display: inline-block; padding: 0;}
-
-	.row {
-	min-width: 100%;
-	min-height: auto;
-	padding: 0;
-	margin: 0 auto;
+#giphyLogo {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	width: 450px;
+	margin-top: -16px;
+	margin-bottom: 80px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 20px;
+	box-shadow: 5px 5px 35px #000;
 }
 
-button {
-
-background-color: #cc0a20;
-color: white;
-border-radius: 20px;
-border:0;
-padding: 10px 20px 10px 20px;
-margin-left: 10px;
-margin-bottom: 20px;
-font-family: Comfortaa;
-font-size: 13px;
-
+button#userInput, button {
+	background-color: #cc0a20;
+	color: white;
+	border-radius: 24px;
+	border: 0;
+	padding: 10px 20px;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-bottom: 0;
+	font-family: Comfortaa;
+	font-size: 13px;
 }
 
-button:hover {
-
+button:hover#userInput {
 	background-color: #0b549e;
 	color: white;
-	font-family: "Comfortaa; 
+	font-family: Comfortaa; 
 	font-weight: 900;
-	font-size: 14px;
-
+	font-size: 13px;
 }
 
 button-1 {
-
-background-color: #0b549e;
-color: white;
-border-radius: 20px;
-border:0;
-padding: 10px 20px 10px 20px;
-margin-left: 10px;
-margin-bottom: 20px;
-font-family: Comfortaa;
-font-size: 13px;
-
+	background-color: #0b549e;
+	color: white;
+	border-radius: 100px;
+	border:0;
+	padding: 10px 20px 10px 20px;
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-bottom: 40px;
+	font-family: Comfortaa;
+	font-size: 10px;
 }
 
 button-1:hover {
 
 	background-color: #28B463;
 	color: white;
-	font-family: "Comfortaa; 
+	font-family: Comfortaa; 
 	font-weight: 900;
-	font-size: 14px;
+	font-size: 10px;
 
 }
 
 h1 {
-
 	font-family: HelveticaNeue-Light; 
 	font-weight: 100;
 	font-size: 80px;
 }
 
 .myTextBox {
-
-font-family: Comfortaa;
-font-size: 20px !important;
-color: white;
-
+	font-family: Comfortaa;
+	font-size: 20px !important;
+	color: white;
 }
 
 #searchInput {
-	padding: 20px;
-	width: 400px;
+	padding-left: 20px;
+	width: 300px;
 	height: 35px;
-	font-size: 24px;
+	font-size: 20px;
 	border-radius: 20px;
 	border: 0;
 /*	background-color: rgba(90,255, 10, .5)*/
@@ -115,34 +93,48 @@ color: white;
   flex-wrap: wrap
   flex: 0;
   flex-grow:1;
-  padding: 1em;
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
   text-align: center;
   justify-content: center;
-
 }
 
 p {
-
 font-family: Comfortaa;
 font-size: 13px;
 font-weight: 800;
 letter-spacing: .15em;
 color: lightgray;
-
 }
-
 
 img {
-
 	border-radius: 20px;
 	border: 3.5px solid #fff;
-	padding: 12px;
+	padding: 18px;
 	margin: 10px;
 	background-color: rgba(90,255, 10, .5)
-
 }
 
+@media only screen and (max-width: 640px) {
 
+button, button-1 {
+	font-size: 10px;
+	padding: 5px 14px;
+}
+
+#giphyLogo {
+	width: 90%;
+	float: left;
+	margin-left: 16px;
+}
+
+img {
+	border-radius: 20px;
+	border: 3.5px solid #fff;
+	padding: 8px;
+/*	margin: 10px;*/
+	width: 100%;
+	background-color: rgba(90,255, 10, .5)
+}

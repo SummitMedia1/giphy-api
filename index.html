@@ -3,44 +3,50 @@
 <head>
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Giphy-API Project</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Giphy-API Project</title>
 	<link rel="stylesheet" type="text/css" href="./assets/stylesheets/giphy-stylesheet.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="./assets/js/giphy.js" type="text/javascript"></script>
 </head>
 
 <body>
-<div class="container-main" id="background">
+<div class="container-fluid">
 <div class="row">
-  <div class="col-12">
-    <div class="col-6" style="float: left">
-      <img src="./assets/images/giphyAsset 1.png" width="100%" height="auto" style="margin-left: 40px; margin-right: auto; margin-top: -16px; border-bottom-left-radius: 60px; border-bottom-right-radius: 30px; box-shadow: 7px 7px 45px #000">
-    </div>
-    
-    <div class="col-6" align="center" style="padding: 80px"> 
-     <form id="searchForm">
-        <label id="searchEntry" class="myTextBox">Add a Search Entry Here:</label><br />
-        <input id="searchInput" type="text"></form><br />
-        <!-- Button triggers new interest to be added -->
-        <button id="userInput" type="submit">Hit Enter to Go Fish</button>
-    </form>
-    <button-1 onclick='refresh()'>Refresh Page</button>
-    </div>
-   </div> 
+<!--   <div class="col-md-8"> -->
+    <div class="col-md-1"></div>
+
+    <div class="col-md-5" align="right" style="float: left">
+      <img src="./assets/images/giphyAsset 1.png" id="giphyLogo">
+    </div>   
+    <div class="col-md-5" align="center"> 
+     <form id="searchForm" style="margin-top: 20px">
+        <label id="searchEntry" class="myTextBox">Add a Search Entry:</label>
+          <br />
+        <input id="searchInput" type="text">
+          <br />
+        <button id="userInput" type="submit">Enter</button>
+      </form>
+      <div class="row" style="height: 80px"><br />
+        <button-1 id="refresh" onclick='refresh()'>Page Refresh</button-1>
+      </div>
+    <div class="col-md-1"></div>
+</div><!--Row Close -->
+</div><!--Container Close -->
+  
   <div class="row" style="height: auto">
-<div class="col-12" align="center">
-  <div align="center" style="padding: 10px auto; display: relative" id="buttons-view"></div>
-</div>
-<div class="row"></div>
-<div class="col-12">
-  <div class="col-1"></div>
-  <div id="gifs-appear-here" class="col-10 flex-container gif" style="position: absolute; display: inline-flex; border-radius: 20px;"></div>
-  <div class="col-1"></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-8" align="center">
+      <div align="center" id="buttons-view"></div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  
+  <div class="row"><br />
+    <div id="gifs-appear-here" class="col-md-12 flex-container" style="position: absolute; display: inline-flex; border-radius: 10px;"></div>
   </div>
 
-
 </div>
-</div>
-
 </body>
 </html>
